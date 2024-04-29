@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import getQuotes, { QuoteType } from "../api/get-quotes";
 import styled from "styled-components";
 
-const QuoteParag = styled.div`
+const QuoteParag = styled.p`
 	padding: 20px;
 	margin: 40px auto;
 	max-width: 800px;
