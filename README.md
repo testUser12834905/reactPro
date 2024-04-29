@@ -16,3 +16,9 @@ Create & demonstrate a sample typescript-react application to utilize the follow
 [] Make some components with SASS
 [] Make some components with styles compontents
 [] Make jest test and mock the api call
+
+## Additional
+
+[] Add pure components
+[] Add controlled components components
+[] Use context provider
