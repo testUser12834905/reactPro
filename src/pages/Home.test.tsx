@@ -8,7 +8,7 @@ jest.mock("../api/get-quotes");
 const mockGetQuotes = getQuotes as jest.MockedFunction<typeof getQuotes>;
 
 describe("Home", () => {
-	it("should render", async () => {
+	it("should render the page with the received quote", async () => {
 		const mockQuote = {
 			content: "Test Quote of the Day",
 		};
