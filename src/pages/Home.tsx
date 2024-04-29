@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from "react"
+import getQuotes from "../api/get-quotes"
 
-type Props = {}
+const Home = () => {
+	const [quote, setQuote] = useState("")
 
-const Home = (props: Props) => {
-  return (
-    <div>Home</div>
-  )
+	useEffect(() => {
+		getQuotes().then((res) => setQuote(res))
+	})
+
+	return (
+		<>
+			<div>Home</div>
+			<p>{quote}</p>
+		</>
+	)
 }
 
 export default Home
